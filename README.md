@@ -21,10 +21,10 @@ This Movie Watchlist App allows users to search for movies, add them to a watchl
 The following technologies are used in this project:
 
 - **[React](https://pt-br.reactjs.org/):** A JavaScript library for building user interfaces.
-- **[TMDb API](https://developer.themoviedb.org/reference/intro/getting-started)** To search for movie details.
+- **[TMDb API](https://developer.themoviedb.org/reference/intro/getting-started):** To search for movie details.
 - **[Context API & Reducer](https://react.dev/learn/scaling-up-with-reducer-and-context):** For adding icons (search and close) to the component.
 - **[React Router](https://reactrouter.com/en/main):** For navigation between pages.
-- **[Font Awesome](https://fontawesome.com/)** For icons used in the movie controls.
+- **[Font Awesome](https://fontawesome.com/):** For icons used in the movie controls.
 
 ## ✅ Requirements
 Before starting 🏁, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
@@ -32,10 +32,10 @@ Before starting 🏁, you need to have [Git](https://git-scm.com) and [Node](htt
 ## 🏁 Starting
 ```
 # Clone this project
-$ git clone https://github.com/mmazitov/search-bar
+$ git clone https://github.com/mmazitov/react-movie-watchlist.git
 
 # Access
-$ cd search-bar
+$ cd react-movie-watchlist
 
 # Install dependencies
 $ $ yarn or $ npm install
@@ -44,6 +44,36 @@ $ $ yarn or $ npm install
 $ $ yarn start or $ npm start
 
 # The server will initialize in the <http://localhost:3000>
+```
+## 🏗️ Environment Variables
+```
+VITE_TMDB_API_KEY=your_tmdb_api_key_here
+```
+You can get an API key by creating an account on [TMDb](https://developer.themoviedb.org/reference/intro/getting-started) and generating a new key in the API section.
+
+##  Project Structure
+
+```
+├── public
+│   └── favicon.ico
+├── src
+│   ├── components
+│   │   ├── Add.js              # Component for searching and adding movies
+│   │   ├── Header.js           # Header navigation component
+│   │   ├── MovieCard.js        # Displays individual movie details
+│   │   ├── MovieControls.js    # Controls for managing movies in the watchlist or watched
+│   │   ├── ResultCard.js       # Displays search results
+│   │   ├── Watched.js          # Page for displaying watched movies
+│   │   └── WatchList.js        # Page for displaying movies in the watchlist
+│   ├── context
+│   │   ├── AppReducer.js       # Reducer for handling movie actions
+│   │   ├── GlobalState.js      # Context API setup and provider
+│   └── App.js                  # Main app component
+├── .env                        # Environment variables file
+├── .gitignore                  # Ignored files for Git
+├── package.json                # Project dependencies and scripts
+└── README.md                   # Project documentation
+
 ```
 
 ## 🤝 Contributing
