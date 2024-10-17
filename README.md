@@ -21,7 +21,7 @@ This Movie Watchlist App allows users to search for movies, add them to a watchl
 The following technologies are used in this project:
 
 - **[React](https://pt-br.reactjs.org/):** A JavaScript library for building user interfaces.
-- **[TMDb API](https://developer.themoviedb.org/reference/intro/getting-started):** To search for movie details.
+- **[TMDb API](https://www.themoviedb.org/):** To search for movie details.
 - **[Context API & Reducer](https://react.dev/learn/scaling-up-with-reducer-and-context):** For adding icons (search and close) to the component.
 - **[React Router](https://reactrouter.com/en/main):** For navigation between pages.
 - **[Font Awesome](https://fontawesome.com/):** For icons used in the movie controls.
